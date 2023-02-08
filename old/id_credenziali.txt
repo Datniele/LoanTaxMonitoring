@@ -1,7 +1,0 @@
-d-testav-mailsender@electric-unity-376117.iam.gserviceaccount.com
-
-ID client auth: 110957334972481645885
-
-Oauth:
-ID: 751756570841-c7q3ghdju6lgtqqam09ib4qol1iial8s.apps.googleusercontent.com
-cl secret: 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
