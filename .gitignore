@@ -1,0 +1,13 @@
+.ipynb_checkpoints
+*cache*
+.idea
+.git
+venv*
+old/*
+*log*.txt
+
+*instantclient-basiclite-windows*
+
+*mlruns*
+
+*.csv
