@@ -69,4 +69,3 @@ if bln_mail_go:
     ms.mail_sender()
 
     print("Mail sent!")
-
