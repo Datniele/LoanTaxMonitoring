@@ -17,10 +17,14 @@ tls = TaxLoanScraping(**dct_conf)
 # bln_write True per default
 dtf_tax_history = tls.get_scraping_result()
 
+print("Scraping done!")
+
 # analisi tassi
 
 dtf_tax = dtf_tax_history.query("TipoTasso == 'fisso'").copy()
 dct_summary = tax_var_analysis(dtf_tax)
+
+print("Loan Tax Analysis done!")
 
 if dct_summary:
     flt_tax = round(dct_summary.get("tax_delta"), 3)*100
@@ -63,3 +67,6 @@ if bln_mail_go:
     ms.mail_configure(str_email_receiver=str_to, str_subject=str_subj, str_corpus=str_corpus)
 
     ms.mail_sender()
+
+    print("Mail sent!")
+
